@@ -1,0 +1,176 @@
+/* Reset dasar untuk konsistensi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Menggunakan font modern */
+  background-color: #eef2f3;
+  /* Latar belakang lembut */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utama */
+/* Container utama */
+.container {
+  max-width: 1000px;
+  /* Melebar dari 800px menjadi 1000px */
+  margin: 40px auto;
+  /* Margin untuk memberi ruang atas dan bawah */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  /* Sudut lebih melengkung */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Grafik dan Laporan */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.8rem;
+  /* Ukuran font yang lebih besar */
+}
+
+/* Memusatkan grafik */
+.pie-chart-container {
+  display: flex;
+  /* Menggunakan flexbox untuk memusatkan */
+  justify-content: center;
+  /* Memusatkan konten di sumbu utama */
+  margin: 20px 0;
+  /* Jarak atas dan bawah untuk grafik */
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  /* Warna hijau yang menarik */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  /* Ukuran font yang lebih besar */
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Jarak antar elemen form */
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  color: #555;
+  /* Warna label */
+}
+
+/* Input dan Select */
+input[type="number"],
+input[type="text"],
+input[type="date"],
+select {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  /* Ukuran font yang lebih besar */
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  /* Efek bayangan saat fokus */
+  outline: none;
+}
+
+/* Tombol */
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Efek transformasi */
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  /* Efek pembesaran saat hover */
+}
+
+/* Daftar Transaksi */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  /* Jarak atas untuk daftar */
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #4CAF50;
+  /* Garis samping warna hijau */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e9e9e9;
+  /* Warna latar belakang saat hover */
+}
+
+/* Grafik dan Laporan */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.8rem;
+  /* Ukuran font yang lebih besar */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    margin: 20px;
+    /* Margin lebih kecil di mobile */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    /* Ukuran font yang lebih kecil di mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    /* Ukuran font yang lebih kecil di mobile */
+  }
+
+  button {
+    font-size: 0.9rem;
+    /* Ukuran font tombol yang lebih kecil */
+  }
+
+  input[type="number"],
+  input[type="text"],
+  select {
+    font-size: 0.9rem;
+    /* Ukuran font input yang lebih kecil */
+  }
+}
